@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  CUSTOMIZE COLORS HERE
+  Change the variables below to change the overall application theme.
+*/
+:root {
+  /* Core brand and surface colors */
+  --color-primary: #3b82f6;        /* Modern Vibrant Blue */
+  --color-primary-hover: #2563eb;  /* Deeper Blue on Hover */
+  --color-secondary: #6366f1;      /* Indigo Accent */
+  
+  --color-background: #0f172a;     /* Deep Slate Background */
+  --color-surface: #1e293b;        /* Elevated Surface */
+  --color-surface-card: #182234;   /* Card Surface */
+  --color-border: #334155;         /* Subtle Border */
+  
+  --color-text: #f8fafc;           /* Crisp Light Text */
+  --color-muted: #94a3b8;          /* Muted Gray Text */
+  
+  /* Status indicators */
+  --color-success: #10b981;        /* Emerald Success */
+  --color-warning: #f59e0b;        /* Amber Warning */
+  --color-danger: #ef4444;         /* Rose/Red Danger */
+
+  /* Severity badge and highlight colors */
+  --severity-low: #38bdf8;         /* Sky Blue */
+  --severity-low-bg: rgba(56, 189, 248, 0.15);
+  
+  --severity-medium: #fbbf24;      /* Amber / Orange */
+  --severity-medium-bg: rgba(251, 191, 36, 0.15);
+  
+  --severity-high: #f87171;        /* Red / Coral */
+  --severity-high-bg: rgba(248, 113, 113, 0.15);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reusable UI Helpers */
+.badge-low {
+  color: var(--severity-low);
+  background-color: var(--severity-low-bg);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.badge-medium {
+  color: var(--severity-medium);
+  background-color: var(--severity-medium-bg);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.badge-high {
+  color: var(--severity-high);
+  background-color: var(--severity-high-bg);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+}

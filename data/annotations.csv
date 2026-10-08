@@ -1,0 +1,3 @@
+# Speech Diagnosis - Placeholder Annotations
+# Columns: recording_id, category, flaw_type, start_sec, end_sec, severity, transcript
+recording_id,category,flaw_type,start_sec,end_sec,severity,transcript

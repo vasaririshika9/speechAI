@@ -1,0 +1,69 @@
+{
+  "analysis_id": "demo-001",
+  "status": "completed",
+  "overall_score": 78,
+  "category_scores": {
+    "pacing": 82,
+    "pitch": 71,
+    "pause_control": 64,
+    "energy": 86,
+    "clarity": 80
+  },
+  "transcript": "Our product helps businesses reduce customer support time by forty percent.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 12.4,
+      "end": 16.1,
+      "type": "TOO_FAST",
+      "severity": "HIGH",
+      "confidence": 0.91,
+      "measured": 205,
+      "reference": 145,
+      "explanation": "The speech rate is significantly higher than the reference range.",
+      "recommendation": "Slow down and add a short pause before the next key statement."
+    },
+    {
+      "id": 2,
+      "start": 31.2,
+      "end": 33.5,
+      "type": "LONG_PAUSE",
+      "severity": "MEDIUM",
+      "confidence": 0.87,
+      "measured": 2.3,
+      "reference": 1.0,
+      "explanation": "A longer-than-expected pause occurs in this section.",
+      "recommendation": "Practice the transition between these sentences."
+    },
+    {
+      "id": 3,
+      "start": 45.0,
+      "end": 58.0,
+      "type": "MONOTONE",
+      "severity": "MEDIUM",
+      "confidence": 0.84,
+      "measured": 12,
+      "reference": 25,
+      "explanation": "Pitch variation is relatively low in this section.",
+      "recommendation": "Use more natural pitch variation to emphasize important points."
+    }
+  ],
+  "features": {
+    "speech_rate": {
+      "average_wpm": 158,
+      "reference_wpm": 145
+    },
+    "pitch": {
+      "mean_f0": 185,
+      "pitch_variance": 18
+    },
+    "pauses": {
+      "count": 6,
+      "average_duration": 0.8,
+      "longest_duration": 2.3
+    },
+    "energy": {
+      "average": 0.62
+    }
+  }
+}
